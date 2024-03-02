@@ -1,0 +1,175 @@
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--base-light);
+    color: var(--base);
+}
+
+.contact-page h1 {
+    font-size: 1.5rem;
+    width:fit-content;
+    line-height: 1.2;
+    border-radius: 8px;
+    margin-top: 0;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.container {
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: fit-content;
+}
+
+.hostel-address {
+    width: 90%;
+    box-shadow: rgb(10, 22, 36) 0px 20px 30px -10px;
+    padding: 10px;
+    background-color: var(--base);
+    border-radius: 8px;
+    display: flex ;
+    flex-direction: column;
+    color: var(--base-light);
+    margin: auto;
+}
+
+.location>div p {
+    font-size: 1rem;
+    font-weight: 500;
+    word-spacing: 3px;
+    padding-bottom: 10px;
+}
+
+.contactLinks {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contactLinks a{
+    text-decoration: none;
+    padding-left: 5px;
+    color: var(--base-light);
+    display: flex;
+    align-items: center;
+}
+
+.contact-numbers {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-numbers>div {
+    margin: 5px;
+    padding: 0 20px;
+    line-height: 0.3;
+}
+
+.contact-page>div img {
+    width: 20px;
+}
+
+.map-location{
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: rgb(10, 22, 36) 0px 20px 30px -10px;
+    margin: 50px 10px;
+}
+
+.gmap_iframe {
+    border-radius: 8px;
+    height: 250px ;
+}
+
+
+@media screen and (min-width:768px){
+
+    .container{
+        max-width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+    }
+
+    .location-address {
+        width: 75%;
+        margin: auto;
+    }
+
+    .hostel-address {
+        width: 60%;
+        margin: 10px;
+        min-height: 410px;
+    }
+
+    .map-location {
+        width: 30%;
+    }
+
+    .contact-page h1 {
+        font-size: 3rem;
+        padding-top: 7rem;
+    }
+
+    .container h4 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .container p, .container a {
+        font-size: 1rem;
+    }
+
+    .main-contact {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .contactLinks a {
+        text-align: left;
+    }
+
+    .contact-numbers {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin: 30px 0;
+    }
+
+    .location {
+        margin: 30px 0;
+    }
+
+    .contact-numbers>div {
+        padding: 10px;
+        line-height: 0.5;
+    }
+
+    .gmap_iframe {
+        height: 440px ;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .gmap_iframe {
+        height: 410px ;
+    }
+}

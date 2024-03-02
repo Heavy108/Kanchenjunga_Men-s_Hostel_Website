@@ -1,0 +1,185 @@
+
+
+.achievement-container {
+    margin: 0 20px 30px;
+}
+.achievement-container h1 {
+    font-size: 1.5rem;
+    margin-top: 6rem;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 8px;
+	/* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}
+
+.potrait {
+    max-width: 80%;
+    margin: auto;
+}
+
+.nav-tabs {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* align-items: center; */
+    justify-content: center;
+    /* text-align: center; */
+
+    --bs-nav-tabs-border-width: none;
+}
+
+.control-btn {
+    border: 1px solid black !important;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    background-color: var(--base);
+}
+
+.control-btn:hover {
+    color: #fff;
+    background-color: var(--secondary);
+}
+
+.collapse {
+    display: flex;
+    flex-direction: column;
+}
+
+.potrait img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.introduction h4 {
+    padding: 10px;
+    text-align: center;
+    padding-left: 0;
+    font-weight: 600;
+}
+
+.into-content li {
+    list-style: none;
+/* font-size: 14px; */
+}
+
+.into-content li::before{
+    content: "\00BB";
+  }
+
+.candidate {
+    padding: 30px 0;
+}
+
+@media screen and (min-width: 425px) {
+    .achievement-container {
+        margin: 0 30px 30px;
+    }
+
+    .achievement-container h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .achievement-container {
+        margin: 0 40px 40px;
+    }
+
+    .achievement-container h1 {
+        font-size: 3rem;
+    }
+
+    .potrait {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .control-btn {
+        font-size: 18px;
+    }
+
+    .introduction h4 {
+        font-size: 1.5rem;
+    }
+
+    .into-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .into-content li::before{
+        display: none;
+      }
+
+    .into-content li {
+        font-size: 18px;
+        width: fit-content;
+        margin: 0.5rem; 
+        padding:1rem;
+        box-shadow:rgba(100, 100 , 111,0.2) 0px 7px 29px 0px;
+        border-radius: 8px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .achievement-container {
+        margin: 0 60px 60px;
+    }
+    .achievement-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .potrait {
+        max-width: 60%;
+        margin: auto;
+    }
+
+    .control-btn {
+        font-size: 20px;
+    }
+
+    .introduction h4 {
+        font-size: 2rem;
+    }
+
+    .into-content li {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    
+    .achievement-container h1 {
+        font-size: 4.5rem;
+    }
+
+    .student {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items:center;
+        gap: 3rem;
+    }
+
+    .candidate{
+        max-width: 70%;
+    }
+
+    .student-img {
+     width: 50%;
+    }
+    .student li{
+        font-size: medium;
+    }
+
+    .control-btn {
+        font-size: 25px;
+    }
+
+}

@@ -1,0 +1,124 @@
+
+.nav-tabs {
+  --bs-nav-tabs-border-width:none;
+}
+
+th {
+  background-color: darkgray !important;
+}
+
+.boarder-container {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.boarder-container h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 7rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.nav-link {
+  border: 1px solid black !important;
+  margin: 5px;
+  border-radius: 8px;
+  width: fit-content;
+  color: black;
+  font-size: 14px;
+}
+
+.control-btn {
+  background-color: var(--base);
+  color: #fff;
+}
+
+.control-btn:hover {
+  color: #fff;
+  background-color: var(--secondary);
+}
+
+.SuperContainer {
+  font-size: 12px;
+}
+
+.table {
+  border: 1px solid black;
+  text-align: center;
+}
+
+@media screen and (min-width: 425px) {
+  .boarder-container h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width:768px) {
+
+  .boarder-container {
+    padding: 30px;
+  }
+
+  .boarder-container h1 {
+    font-size: 3rem;
+  }
+
+  .tab-pane {
+    margin: 50px 0;
+  }
+}
+
+@media screen and (min-width:1024px) {
+
+  .boarder-container {
+    padding: 50px;
+  }
+
+  .boarder-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .tab-pane {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .Boarders_list {
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .SuperContainer {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+
+  .boarder-container {
+    padding: 80px;
+  }
+
+  .boarder-container h1 {
+    font-size: 4.5rem;
+  }
+
+  .nav-link {
+    font-size: 25px;
+  }
+
+  .SuperContainer {
+    font-size: 20px;
+  }
+}

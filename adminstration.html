@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+
+    <title>Adminstration @KMH</title>
+
+    <link rel="icon" type="image" href="/images/hostel-icon.svg" />
+  </head>
+
+  <body>
+    <!--Header-->
+    <div id="header"></div>
+
+    <!--Admin-->
+
+    <div class="admin-container">
+      <div class="exp">
+      <h1 class="brush_paint">ADMINSTRATION</h1>
+    </div>
+      <!--Admin Wrapper-->
+      <div class="admin-wrapper">
+        <!--Admin Nav-->
+        <div class=" controls">
+
+          <nav class="admin-nav">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="nav-link control-btn"
+                id="warden-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#warden"
+                type="button"
+                role="tab"
+                aria-controls="warden"
+                aria-selected="true"
+              >
+                Warden
+              </button>
+              <button
+                class="nav-link control-btn"
+                id="prefect-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#prefect"
+                type="button"
+                role="tab"
+                aria-controls="prefect"
+                aria-selected="false"
+              >
+                Prefect
+              </button>
+              <button
+                class="nav-link control-btn"
+                id="assistant-prefects-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#aprefect"
+                type="button"
+                role="tab"
+                aria-controls="aprefect"
+                aria-selected="false"
+              >
+                Assistant Prefect
+              </button>
+
+              <button
+                class="nav-link control-btn"
+                id="mess-convenor-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#convenor"
+                type="button"
+                role="tab"
+                aria-controls="convenor"
+                aria-selected="false"
+              >
+                Mess Convenor
+              </button>
+
+              <button
+                class="nav-link control-btn"
+                id="finance-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#finance"
+                type="button"
+                role="tab"
+                aria-controls="finance"
+                aria-selected="false"
+              >
+                Finance
+              </button>
+              <button
+                class="nav-link control-btn"
+                id="staff-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#astaff"
+                type="button"
+                role="tab"
+                aria-controls="Staff"
+                aria-selected="false"
+              >
+                Staff
+              </button>
+              <button
+                class="nav-link control-btn"
+                id="web-master-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#wmaster"
+                type="button"
+                role="tab"
+                aria-controls="wmaster"
+                aria-selected="false"
+              >
+                Web Master
+              </button>
+
+            </div>
+          </nav>
+
+        </div>
+
+        <!--Admin Content-->
+        <div class=" admin-content">
+
+          <div class="tab-content inner-container" id="nav-tabContent">
+            <!-- wardens Content -->
+            
+            <div
+              class="tab-pane fade show active"
+              id="warden"
+              role="tabpanel"
+              aria-labelledby="warden-tab"
+            >
+              <!--Senior warden -->
+
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/SENIOR WARDEN.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Senior Warden</h3>
+                  <h4>Dr. Rajat Kanti Nath</h4>
+                  <p>Asst. Prof., Department of Mathematical Sciences</p>
+                  <div class="contact-div">
+                    <div class="contact-links">
+                      <img src="images/email.svg" alt="email-icon" />
+                      <a href="mailto:rknath@tezu.ernet.in"
+                        target="_blank">rknath@tezu.ernet.in</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Associate warden -->
+
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/warden.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Warden</h3>
+                  <h4>Dr. Anish Ahmed</h4>
+                  <p>Asst. Prof., Dept. of Electrical Engineering</p>
+                  <div class="contact-div">
+                    <div class="contact-links">
+                      <img src="images/telephone.svg" alt="telephone-icon" />
+                      <a>+91-3712-27-3456</a>
+                    </div>
+                    <div class="contact-links">
+                      <img src="images/email.svg" alt="email-icon" />
+                      <a href="mailto:aahmad@tezu.ernet.in"
+                        target="_blank">aahmad@tezu.ernet.in</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Prefect Content -->
+            <div
+              class="tab-pane fade"
+              id="prefect"
+              role="tabpanel"
+              aria-labelledby="prefect-tab"
+            >
+              <!-- Prefect -->
+
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/prefect.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Prefect</h3>
+                  <h4>Pallab Kumar Borah</h4>
+                  <p>Master of Business Adminstration</p>
+                  <p>Batch: 2023-2025</p>
+                  <p>Enrollment Number: BAM23048</p>
+                  <p>Room No: 148</p>
+                  <p>Wing: NILGIRI</p>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Assistant Prefect Content -->
+            <div
+              class="tab-pane fade"
+              id="aprefect"
+              role="tabpanel"
+              aria-labelledby="assistant-prefects-tab"
+            >
+              <!-- Assistant Prefect -->
+
+              <!-- AP1 -->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/omkar pandey.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Assistant Prefect</h3>
+                  <h4>General Administration</h4>
+                  <h4>Omkar Pandey</h4>
+                  <p>Int. Mcom</p>
+                  <p>Batch: 2019-2024</p>
+                  <p>Enrollment Number: COI19006</p>
+                  <p>Room No: 402</p>
+                  <p>Wing: DEOMALI</p>
+
+                </div>
+              </div>
+
+              <!-- AP2 -->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/keshavkumar.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Assistant Prefect</h3>
+                  <h4>Cleanliness & Sanitization</h4>
+                  <h4>Keshav Kumar</h4>
+                  <p>B.Tech (Computer Science & Engineering)</p>
+                  <p>Batch: 2020-2024</p>
+                  <p>Enrollment Number: CSB20043</p>
+                  <p>Room No: 235</p>
+                  <p>Wing: PURBANCHAL</p>
+
+                </div>
+              </div>
+
+              <!--AP3-->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/himan roshan.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Assistant Prefect</h3>
+                  <h4>Cultural, Literary, Sports, Common Room</h4>
+                  <h4>Himan Roshan Borah</h4>
+                  <p>Integrated M.com</p>
+                  <p>Batch: 2019-2024</p>
+                  <p>Enrollment Number: COI19008</p>
+                  <p>Room No: 269</p>
+                  <p>Wing: JATINGA</p>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Mess Convenor Content -->
+            <div
+              class="tab-pane fade"
+              id="convenor"
+              role="tabpanel"
+              aria-labelledby="mess-convenor-tab"
+            >
+              <!-- Mess Manager -->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/nilutpal.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Assistant Prefect</h3>
+                  <h4>Mess Operation</h4>
+                  <h4>Nilutpal Piku Deka</h4>
+                  <p>Master of Business Adminstration</p>
+                  <p>Batch: 2023-2025</p>
+                  <p>Enrollment Number: BAM23058</p>
+                  <p>Room No: 353</p>
+                  <p>Wing: SHIVALIK</p>
+
+                </div>
+              </div>
+
+              <!-- Assistant Mess Manager -->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/Aman.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Assistant Prefect</h3>
+                  <h4>Mess Supplies & Food Quality</h4>
+                  <h4>Aman Kumar Gupta</h4>
+                  <p>B.Tech (Computer Science & Engineering)</p>
+                  <p>Batch: 2021-2025</p>
+                  <p>Enrollment Number: CSB21084</p>
+                  <p>Room No: 307</p>
+                  <p>Wing: ARAVALI</p>
+
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Finance Content -->
+            <div
+              class="tab-pane fade"
+              id="finance"
+              role="tabpanel"
+              aria-labelledby="finance-tab"
+            >
+              <!-- Finance Manager -->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/ashankur.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Assistant Prefect</h3>
+                  <h4>Auditor, Finance</h4>
+                  <h4>Ashankur Borgohain</h4>
+                  <p>B.Tech (Mechanical Engineering)</p>
+                  <p>Batch: 2021-2025</p>
+                  <p>Enrollment Number: MEB21024</p>
+                  <p>Room No: 106</p>
+                  <p>Wing: KANGBACHEN</p>
+
+                </div>
+              </div>
+            </div>
+
+            <!--Staff Content-->
+            <div
+              class="tab-pane fade"
+              id="astaff"
+              role="tabpanel"
+              aria-labelledby="staff-tab"
+            >
+              <!-- S1 -->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/avatar-boy-svgrepo-com.svg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Caretaker</h3>
+                  <h4>Wahiduz Zaman</h4>
+                  <p>Hostel Office</p>
+                </div>
+              </div>
+
+              <!-- S2 -->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/avatar-boy-svgrepo-com.svg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Security Staff</h3>
+                  <h4>Ali Hussain</h4>
+                  <p>Security Desk</p>
+                </div>
+              </div>
+
+              <!--S3-->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/nazmul.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Security Staff</h3>
+                  <h4>Nazmul Ahmed</h4>
+                  <p>Security desk</p>
+                </div>
+              </div>
+
+              <!--S4-->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/pramod.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Cook</h3>
+                  <h4>Pramod Narzary</h4>
+                  <p>Hostel Mess</p>
+                </div>
+              </div>
+
+              <!--S5-->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/raktim.jpeg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Cook</h3>
+                  <h4>Raktim Borah</h4>
+                  <p>Hostel Mess</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Web Master Content -->
+            <div
+              class="tab-pane fade"
+              id="wmaster"
+              role="tabpanel"
+              aria-labelledby="web-master-tab"
+            >
+              <!-- Web Master 1 -->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/dkp-image.webp"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Web Master</h3>
+                  <h4>Deepak Kumar Prajapati</h4>
+                  <p>B.Tech (Computer Science & Engineering)</p>
+                  <p>Batch: 2021-2025</p>
+                  <p>Enrollment Number: CSB21096</p>
+
+                  <div class="contact-div">
+                    <div class="phone-links">
+                      <div class="contact-links">
+                        <img src="images/telephone.svg" alt="telephone-icon" />
+                        <a>091-8638702332</a>
+                      </div>
+                      <div class="contact-links">
+                        <img src="images/email.svg" alt="email-icon" />
+                        <a href="mailto:deepakpk756@gmail.com"
+                          target="_blank">deepakpk756@gmail.com</a>
+                      </div>
+                    </div>
+                  <div class="img-link">
+                    <div class="contact-links">
+                      <a
+                        href="https://www.linkedin.com/in/deepak-kumar-prajapati-227771212"
+                        class="icon"
+                        target="_blank"
+                        ><img id="linkedin1" src="images/linkedin.svg"  alt="LinkedIn"
+                      /></a>
+                    </div>
+
+                    <div class="contact-links">
+                      <a
+                        href="https://deepakprajapati.netlify.app/"
+                        class="icon"
+                        target="_blank"
+                        ><img src="images/web.svg" alt="Personal-website"
+                      /></a>
+                    </div>
+                  </div>
+
+                  </div>
+
+                  </div>
+                </div>
+              <!--web master 2-->
+              <div class="row admin-block">
+                <div class="col-lg-6 col-sm-12 potrait">
+                  <img
+                    class="image"
+                    src="./gallery/Admin_photois/satyam.jpg"
+                  />
+                </div>
+                <div class="col-lg-6 col-sm-12 introduction">
+                  <h3>Web Master</h3>
+                  <h4>Satyam Sajal</h4>
+                  <p>B.Tech (Computer Science & Engineering)</p>
+                  <p>Batch: 2021-2025</p>
+                  <p>Enrollment Number: CSB21073</p>
+
+                  <div class="contact-div">
+                    <div class="phone-links">
+                    <div class="contact-links">
+                      <img src="images/telephone.svg" alt="telephone-icon" />
+                      <a>091-7004114303</a>
+                    </div>
+                    <div class="contact-links">
+                      <img src="images/email.svg" alt="email-icon" />
+                      <a href="mailto:satyamsajal6@gmail.com"
+                        target="_blank">satyamsajal6@gmail.com</a>
+                    </div>
+                  </div>
+                    <div class="img-link">
+                      <div class="contact-links">
+                        <a
+                          href="https://www.linkedin.com/in/satyam-sajal-15a90325b"
+                          class="icon"
+                          target="_blank"
+                          ><img id="linkedin2" src="images/linkedin.svg" alt="LinkedIn"
+                        /></a>
+                      </div>
+
+                      <div class="contact-links">
+                        <a
+                          href=""
+                          class="icon"
+                          target="_blank"
+                          ><img src="images/web.svg" alt="Personal-website"
+                        /></a>
+                      </div>
+                  </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+              
+            </div>
+
+          </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <!--Footer-->
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="javascript/script.js"></script>
+    <script src="javascript/home.js"></script>
+    <script src="./javascript/transition.js"></script>
+  </body>
+</html>

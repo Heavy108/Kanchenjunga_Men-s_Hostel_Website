@@ -1,0 +1,297 @@
+/* Admin */
+
+/* .admin-container {
+    margin: 0;
+} */
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+  
+  h4 {
+    font-size: 1rem;
+  }
+  
+  p, a {
+    font-size: 0.8rem;
+  }
+  
+
+.admin-container h1 {
+    text-align: center;
+    padding-top : 7rem ;
+}
+
+.admin-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 10px;
+  flex-direction: column;
+}
+
+.nav-tabs {
+     --bs-nav-tabs-border-width: none;
+}
+
+.control-btn {
+    border: 1px solid black !important;
+    border-radius: 8px;
+    margin-bottom: 5px !important;
+    color: #fff;
+    background-color: var(--base);
+}
+
+.control-btn:hover {
+    color: #fff;
+    background-color: var(--secondary);
+}
+
+.inner-container {
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.potrait img {
+    width: 13rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.contact-links img {
+    width: 1rem;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.introduction {
+    margin-bottom: 2rem;
+}
+
+.img-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.img-link img {
+    width: 2.5rem;
+}
+
+#linkedin1, #linkedin2{
+  width: 3rem;
+}
+
+
+@media screen and (min-width:375px) {
+    .control-btn {
+        margin: 0 1.8rem;
+    }
+}
+
+@media screen and (min-width:425px) {
+
+  h1 {
+    font-size: 1.7rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+      
+      p, a {
+        font-size: 0.9rem;
+      }
+    .control-btn {
+        margin: 0 3.4rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+  h1{
+    font-size: 3rem;
+  } 
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  p, a {
+    font-size: 1.1rem;
+  }
+    .admin-wrapper {
+        display: flex;
+    }
+
+    .admin-content {
+        width: 70%;
+    }
+
+    .controls {
+        width: 25%;
+        margin-left: 2.4rem;
+    }
+    
+    .control-btn {
+        margin: 0;
+    }
+
+    .inner-container {
+        margin: 0;
+    }
+
+    .admin-nav {
+        margin: 0;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .tab-pane {
+        margin: 0;
+        padding: 0 2rem 1.5rem;
+    }
+
+    .admin-block {
+      align-items: center;
+    }
+
+    .potrait img {
+        width: 18rem;
+        margin-bottom: 2rem;
+    }
+    .img-link img {
+        width: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+  h1{
+    font-size: 3.5rem;
+  } 
+  h2 {
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+    .admin-container h1 {
+        padding-top: 9rem;
+        padding-bottom: 2rem;
+    }
+
+    .admin-content {
+        width: 75%;
+    }
+
+    .controls {
+        width: 20%;
+        margin-left: 2.4rem;
+    }
+    
+    .control-btn {
+        margin: 0;
+    }
+
+    .inner-container {
+        margin: 0;
+    }
+
+    .admin-nav {
+        margin: 0;
+    }
+
+    .tab-pane {
+        margin: 0;
+        /* padding: 0 2rem 1.5rem; */
+    }
+
+    .admin-block {
+        margin: 0 0 3rem;
+    }
+
+    .introduction {
+        padding: 0;
+
+    }
+
+    .potrait img {
+        width: 18rem;
+        /* margin-bottom: 2rem; */
+    }
+    .img-link img {
+        width: 3.5rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+  h1{
+    font-size: 4rem;
+  } 
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3{
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+
+    .admin-container h1 {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+    }
+    .control-btn {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .potrait img {
+        width: 19rem;
+        /* margin-bottom: 50px; */
+    }
+}

@@ -1,0 +1,261 @@
+
+  body{
+	margin:0;
+	padding:0;
+}
+h1 {
+	font-size: 1.6rem;
+  }
+  
+  h2 {
+	font-size: 1.5rem;
+  }
+  
+  h3 {
+	font-size: 1.2rem;
+  }
+  
+  h4 {
+	font-size: 1rem;
+  }
+  
+  p, a {
+	font-size: 0.8rem;
+  }
+  .portfolio-menu ol li{
+	 font-size: 0.8rem; 
+	 font-weight: 600;
+  } 
+.gallery-container{
+	width:100%;
+	
+}
+
+.gallery-container h1 {
+    color: var(--base);
+	width:fit-content;
+    border-radius: 8px;
+   	
+    font-weight: 600;
+    text-align: center;
+	margin-top: 6.5rem;
+	padding: 10px;
+	/* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}
+
+.portfolio-menu {
+	padding: 10px 5px;
+
+	
+}
+
+ol {
+	/* border: 1px solid blue; */
+	gap: 5px;
+	width: fit-content;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+    /* list-style-type: disc; */
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+
+
+}
+
+.portfolio-menu ol li {
+	font-size: 12px;
+
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin:0px 1rem 2rem;
+	
+	/* gap: 1rem; */
+}
+
+.item {
+	width: 47%;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.item img {
+	width: 8rem;
+	height:6rem ;
+	border-radius: 8px;
+}
+
+@media screen and (min-width:375px) {
+	.item img {
+		width: 10rem;
+		height: 6.5rem;
+
+	}
+
+}
+
+@media screen and (min-width:425px) {
+
+	h1 {
+		font-size: 1.8rem;
+	  }
+	  
+	  h2 {
+		font-size: 1.7rem;
+	  }
+	  
+	  p, a {
+		font-size: 0.9rem;
+	  }
+	.portfolio-menu ol li {
+		font-size: 0.9rem;
+		
+	}
+	.item img {
+		width: 11rem;
+		height: 7.5rem;
+	}
+
+}
+
+@media screen and (min-width:768px) {
+
+	
+	h1{
+		font-size: 2.8rem;
+		margin-top: 7rem;
+	  } 
+	  h2 {
+		font-size: 2.5rem;
+	  }
+	  h3{
+		font-size: 2.1rem;
+	  }
+	  h4 {
+		font-size: 1.5rem;
+	  }
+	  p, a {
+		font-size: 1.2rem;
+	  }
+	
+	.portfolio-menu ol li {
+		font-size: 1.2rem;
+	}
+	.portfolio-menu{
+		margin: 1rem;
+	}
+	.item {
+		width: 33.33%;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.item img {
+		width: 14rem;
+		height: 10rem;
+	}
+
+}
+
+@media screen and (min-width:1024px) {
+
+	
+	.gallery-container h1{
+		font-size: 3.2rem;
+		margin-top: 10rem;
+		
+	  } 
+	  h2 {
+		font-size: 3rem;
+	  }
+	  h3{
+		font-size: 2.8rem;
+	  }
+	  h4 {
+		font-size: 2rem;
+	  }
+	  p {
+		font-size: 1.8rem;
+	  }
+	
+	.portfolio-menu ol li {
+		font-size: 1.8rem;
+	}
+
+	.item {
+		width: 25%;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.item img {
+		width: 19rem;
+		height: 12rem;
+	}
+
+}
+
+@media screen and (min-width:1440px) {
+	
+	h1{
+		font-size: 4.5rem;
+	  } 
+	  h2 {
+		font-size: 3.8rem;
+	  }
+	  h3{
+		font-size: 3rem;
+	  }
+	  h4 {
+		font-size: 2.5rem;
+	  }
+	  p {
+		font-size: 1.8rem;
+	  }
+	.gallery-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		/* margin-right: 1rem !important; */
+
+	}
+	
+
+	.portfolio-menu ol li {
+		font-size: 1.8rem;
+
+	}
+
+	.item {
+		width: 25%;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.item img {
+		width: 20rem;
+		height: 14rem;
+		gap: 0;
+		
+	}
+	.portfolio-item {
+		margin: 0rem 0rem 2rem !important; 
+	}
+
+}
