@@ -28,6 +28,7 @@
 
 .mobileNav img{
   width: 2rem;
+  filter: invert();
 }
 
 #closeMenu{
@@ -100,6 +101,7 @@
   .active #openMenu{
     display: none;
   }
+  
   
   .header a{
     font-size: 1rem;
