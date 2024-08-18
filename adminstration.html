@@ -108,6 +108,18 @@
                 Finance
               </button>
               <button
+              class="nav-link control-btn"
+              id="web-master-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#wmaster"
+              type="button"
+              role="tab"
+              aria-controls="wmaster"
+              aria-selected="false"
+            >
+              Web Master
+            </button>
+              <button
                 class="nav-link control-btn"
                 id="staff-tab"
                 data-bs-toggle="tab"
@@ -117,20 +129,9 @@
                 aria-controls="Staff"
                 aria-selected="false"
               >
-                Staff
+                Previous Adminstration
               </button>
-              <button
-                class="nav-link control-btn"
-                id="web-master-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#wmaster"
-                type="button"
-                role="tab"
-                aria-controls="wmaster"
-                aria-selected="false"
-              >
-                Web Master
-              </button>
+             
 
             </div>
           </nav>
@@ -390,82 +391,15 @@
               role="tabpanel"
               aria-labelledby="staff-tab"
             >
-              <!-- S1 -->
-              <div class="row admin-block">
-                <div class="col-lg-6 col-sm-12 potrait">
-                  <img
-                    class="image"
-                    src="./gallery/Admin_photois/avatar-boy-svgrepo-com.svg"
-                  />
-                </div>
-                <div class="col-lg-6 col-sm-12 introduction">
-                  <h3>Caretaker</h3>
-                  <h4>Wahiduz Zaman</h4>
-                  <p>Hostel Office</p>
-                </div>
-              </div>
-
-              <!-- S2 -->
-              <div class="row admin-block">
-                <div class="col-lg-6 col-sm-12 potrait">
-                  <img
-                    class="image"
-                    src="./gallery/Admin_photois/avatar-boy-svgrepo-com.svg"
-                  />
-                </div>
-                <div class="col-lg-6 col-sm-12 introduction">
-                  <h3>Security Staff</h3>
-                  <h4>Ali Hussain</h4>
-                  <p>Security Desk</p>
-                </div>
-              </div>
-
-              <!--S3-->
-              <div class="row admin-block">
-                <div class="col-lg-6 col-sm-12 potrait">
-                  <img
-                    class="image"
-                    src="./gallery/Admin_photois/nazmul.jpeg"
-                  />
-                </div>
-                <div class="col-lg-6 col-sm-12 introduction">
-                  <h3>Security Staff</h3>
-                  <h4>Nazmul Ahmed</h4>
-                  <p>Security desk</p>
-                </div>
-              </div>
-
-              <!--S4-->
-              <div class="row admin-block">
-                <div class="col-lg-6 col-sm-12 potrait">
-                  <img
-                    class="image"
-                    src="./gallery/Admin_photois/pramod.jpeg"
-                  />
-                </div>
-                <div class="col-lg-6 col-sm-12 introduction">
-                  <h3>Cook</h3>
-                  <h4>Pramod Narzary</h4>
-                  <p>Hostel Mess</p>
-                </div>
-              </div>
-
-              <!--S5-->
-              <div class="row admin-block">
-                <div class="col-lg-6 col-sm-12 potrait">
-                  <img
-                    class="image"
-                    src="./gallery/Admin_photois/raktim.jpeg"
-                  />
-                </div>
-                <div class="col-lg-6 col-sm-12 introduction">
-                  <h3>Cook</h3>
-                  <h4>Raktim Borah</h4>
-                  <p>Hostel Mess</p>
-                </div>
-              </div>
+           <div id="staff-content">
+            
             </div>
-
+              <div id="pagination-controls" class="d-flex justify-content-center mt-4">
+                <button id="prev-page" class="btn btn-secondary mx-2">Previous</button>
+                <span id="page-numbers" class="align-self-center"></span>
+                <button id="next-page" class="btn btn-secondary mx-2">Next</button>
+              </div>
+              </div>
             <!-- Web Master Content -->
             <div
               class="tab-pane fade"
@@ -473,6 +407,56 @@
               role="tabpanel"
               aria-labelledby="web-master-tab"
             >
+            <div class="row admin-block">
+              <div class="col-lg-6 col-sm-12 potrait">
+                <img
+                  class="image"
+                  src="./gallery/Admin_photois/satyam.jpg"
+                />
+              </div>
+              <div class="col-lg-6 col-sm-12 introduction">
+                <h3>Web Master</h3>
+                <h4>Satyam Sajal</h4>
+                <p>B.Tech (Computer Science & Engineering)</p>
+                <p>Batch: 2021-2025</p>
+                <p>Enrollment Number: CSB21073</p>
+
+                <div class="contact-div">
+                  <div class="phone-links">
+                  <div class="contact-links">
+                    <img src="images/telephone.svg" alt="telephone-icon" />
+                    <a>091-7004114303</a>
+                  </div>
+                  <div class="contact-links">
+                    <img src="images/email.svg" alt="email-icon" />
+                    <a href="mailto:satyamsajal6@gmail.com"
+                      target="_blank">satyamsajal6@gmail.com</a>
+                  </div>
+                </div>
+                  <div class="img-link">
+                    <div class="contact-links">
+                      <a
+                        href="https://www.linkedin.com/in/satyam-sajal-15a90325b"
+                        class="icon"
+                        target="_blank"
+                        ><img id="linkedin2" src="images/linkedin.svg" alt="LinkedIn"
+                      /></a>
+                    </div>
+
+                    <div class="contact-links">
+                      <a
+                        href=""
+                        class="icon"
+                        target="_blank"
+                        ><img src="images/web.svg" alt="Personal-website"
+                      /></a>
+                    </div>
+                </div>
+
+                </div>
+
+              </div>
+            </div>
               <!-- Web Master 1 -->
               <div class="row admin-block">
                 <div class="col-lg-6 col-sm-12 potrait">
@@ -525,56 +509,7 @@
                   </div>
                 </div>
               <!--web master 2-->
-              <div class="row admin-block">
-                <div class="col-lg-6 col-sm-12 potrait">
-                  <img
-                    class="image"
-                    src="./gallery/Admin_photois/satyam.jpg"
-                  />
-                </div>
-                <div class="col-lg-6 col-sm-12 introduction">
-                  <h3>Web Master</h3>
-                  <h4>Satyam Sajal</h4>
-                  <p>B.Tech (Computer Science & Engineering)</p>
-                  <p>Batch: 2021-2025</p>
-                  <p>Enrollment Number: CSB21073</p>
-
-                  <div class="contact-div">
-                    <div class="phone-links">
-                    <div class="contact-links">
-                      <img src="images/telephone.svg" alt="telephone-icon" />
-                      <a>091-7004114303</a>
-                    </div>
-                    <div class="contact-links">
-                      <img src="images/email.svg" alt="email-icon" />
-                      <a href="mailto:satyamsajal6@gmail.com"
-                        target="_blank">satyamsajal6@gmail.com</a>
-                    </div>
-                  </div>
-                    <div class="img-link">
-                      <div class="contact-links">
-                        <a
-                          href="https://www.linkedin.com/in/satyam-sajal-15a90325b"
-                          class="icon"
-                          target="_blank"
-                          ><img id="linkedin2" src="images/linkedin.svg" alt="LinkedIn"
-                        /></a>
-                      </div>
-
-                      <div class="contact-links">
-                        <a
-                          href=""
-                          class="icon"
-                          target="_blank"
-                          ><img src="images/web.svg" alt="Personal-website"
-                        /></a>
-                      </div>
-                  </div>
-
-                  </div>
-
-                </div>
-              </div>
+              
             </div>
               
             </div>
@@ -592,5 +527,6 @@
     <script src="javascript/script.js"></script>
     <script src="javascript/home.js"></script>
     <script src="./javascript/transition.js"></script>
+    <script src="./javascript/pagination.js"></script>
   </body>
 </html>

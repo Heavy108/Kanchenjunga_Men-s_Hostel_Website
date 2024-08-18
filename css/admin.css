@@ -100,7 +100,29 @@ h3 {
 #linkedin1, #linkedin2{
   width: 3rem;
 }
-
+.prcontainer{
+  border: 2px solid #d9d9d9;
+  border-radius: 1rem;
+  width: fit-content;
+  background-color: #fafafa;
+  margin-bottom: 0.8rem;
+}
+.primagecontainer{
+  margin: 1rem;
+}
+.primagecontainer img{
+  width: 10rem;
+  height: 10rem;
+}
+.printroduction  h4, h5 ,p{
+  font-size: 0.8rem !important;
+}
+#staff-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 @media screen and (min-width:375px) {
     .control-btn {
@@ -194,6 +216,13 @@ h3 {
     .img-link img {
         width: 3rem;
     }
+    #staff-content{
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .prcontainer{
+      margin: 1rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -260,6 +289,9 @@ h3 {
     }
     .img-link img {
         width: 3.5rem;
+    }
+    .printroduction  h4, h5 ,p{
+      font-size: 1rem !important;
     }
 }
 
