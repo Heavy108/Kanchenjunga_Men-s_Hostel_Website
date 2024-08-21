@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/Carasoul.css">
 
   <title>KMH</title>
 
@@ -20,7 +21,7 @@
   <div id="header"></div>
 
   <!--Title-->
-  <section class="home" id="home">
+  <!-- <section class="home" id="home">
 
       <div class="imgContainer">
         <img src="./gallery/main.jpeg" alt="">
@@ -31,7 +32,26 @@
         <h1>Kanchenjungha Men's Hostel</h1>
         <h4>home... away from home</h4>
       </div>
-    </section>
+    </section> -->
+    <div class="carouselwrapper module-wrapper">
+      <div class="ui">
+          <button class="prev" onclick="moveClass = 'next'; updateCarousel();">
+              <span class="material-icons">chevron_left</span>
+          </button>
+          <button class="next" onclick="moveClass = 'prev'; updateCarousel();">
+              <span class="material-icons">chevron_right</span>
+          </button>
+      </div>
+      <ul id="carousel" class="carousel">
+          <!-- Cards will be inserted here by JavaScript -->
+      </ul>
+  </div>
+
+  
+
+
+
+
 
   <!--About-->
   <section class="about common" id="about">
@@ -207,6 +227,8 @@
   <script src="javascript/script.js"></script>
   <script src="javascript/home.js"></script>
   <script src="./javascript/transition.js"></script>
+  <script src="./javascript/carasoul.js"></script>
+
 </body>
 
 </html>
