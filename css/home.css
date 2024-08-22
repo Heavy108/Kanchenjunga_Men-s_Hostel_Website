@@ -131,6 +131,7 @@ img {
   margin: 1em;
   line-height: 1.5;
   color: #646262;
+  font-size: 1rem;
 }
 
 /* Facilities Section */
@@ -161,11 +162,27 @@ img {
   font-size: 12px;
   font-weight: 500;
   padding: 10px 0;
+  color: black;
 }
 
 .facilities-card img {
   width: 50px;
 }
+.content-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.text-content {
+  width: 48%;
+}
+
+.video-content {
+  width: 48%;
+}
+
 
 /* Achievement and Gallery Section  */
 
@@ -188,6 +205,7 @@ img {
   padding-top: 0.6em;
   font-weight: 500;
   width: min-content;
+  color: black;
 }
 
 .achievements-card img, .gallery-card img {

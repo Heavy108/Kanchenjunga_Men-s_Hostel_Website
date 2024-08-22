@@ -1,8 +1,8 @@
 
       const items = [
-          { image: "/gallery/photo_gallery/Foundation_Day/1.jpeg" },
-          { image: "/gallery/photo_gallery/Foundation_Day/2.jpeg" },
-          { image: "/gallery/photo_gallery/Foundation_Day/3.jpeg" }
+          { image: "./gallery/main.jpeg" },
+          { image: "/gallery/photo_gallery/Foundation_Day/4.jpeg" },
+          { image: "/gallery/photo_gallery/Miscellaneous/10.jpeg" }
       ];
 
       let moveClass = '';
@@ -22,11 +22,14 @@
               div.className = 'Introduction';
 
               const h2 = document.createElement('h2');
-              h2.innerText = 'Together Again!';
+              h2.innerText = 'Welcome to Kanchenjungha Men\'s Hostel!';
               div.appendChild(h2);
+            //   const h3 = document.createElement('h3');
+            //   h2.innerText = 'Kanchenjungha Men's Hostel';
+            //   div.appendChild(h3);
 
               const p = document.createElement('p');
-              p.innerText = "Welcome back, brilliant minds of 0s and 1s! As CSE alumni, you're the architects of the digital future. Reconnect, reminisce, and inspire. Together, let's code unforgettable memories!";
+              p.innerText = "Home... away from Home";
               div.appendChild(p);
 
               li.appendChild(div);
