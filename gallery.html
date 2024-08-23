@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!--Bootstrap-->
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
 
   <!--Style Sheet-->
   <link rel="stylesheet" href="css/gallery.css" />
@@ -17,8 +17,7 @@
   <link rel="stylesheet" href="css/footer.css" />
 
   <title>Gallery @KMH</title>
-
-  <link rel="icon" type="image" href="/images/hostel-icon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/images/hostel-icon.svg" />
 </head>
 
 <body>
@@ -26,9 +25,9 @@
   <div id="header"></div>
 
   <!--Gallery-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" defer></script>
 
   <div class="gallery-container">
     <h1 class="brush_paint">PHOTO GALLERY</h1>
@@ -47,98 +46,59 @@
   </div>
 
   <script>
-    const imageFolders = {
-  FD: 'Foundation_Day',
-  AD: 'Annual_Meet',
-  F: 'Farewell',
-  M: 'Miscellaneous'
-};
+    document.addEventListener("DOMContentLoaded", function () {
+      const imageFolders = {
+        FD: ['1.jpeg', '2.jpeg', '3.jpeg','4.jpeg'], // Replace with actual image names
+        AD: ['1.jpeg', '2.jpeg', '3.jpeg','4.jpeg','5.jpeg', '6.jpeg', '7.jpeg','8.jpeg','9.jpg', '10.jpg', '11.jpg','12.jpg', '13.jpg'],
+        F: ['1.jpeg', '2.jpeg', '3.jpeg','4.jpeg','5.jpeg', '6.jpeg', '7.jpeg','8.jpeg','9.jepg'],
+        M: [
+          '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg', '6.jpeg', '7.jpeg',
+          '8.jpeg', '9.jpeg', '10.jpeg', '11.jpeg', '12.jpeg', '13.jpeg', '14.jpeg',
+          '15.jpeg', '16.jpeg', '17.jpeg', '18.jpeg', '19.jpeg', '20.jpeg', '21.jpeg',
+          '22.jpeg', '24.jpeg', '25.jpeg', '26.jpeg', '27.jpeg',
+          '28.jpg', '29.jpg'
+        ] 
+      };
 
-const imageExtensions = ['jpg', 'jpeg'];
-const galleryContainer = document.getElementById('gallery');
+      const galleryContainer = document.getElementById('gallery');
 
-const imageExists = async (src) => {
-  try {
-    const response = await fetch(src, { method: 'HEAD' });
-    return response.ok;
-  } catch (error) {
-    console.error(`Error checking image existence: ${src}`, error);
-    return false;
-  }
-};
+      const loadImages = () => {
+        for (const [key, files] of Object.entries(imageFolders)) {
+          const folder = key;
 
-const findMaxIndex = async (folder) => {
-  let maxIndex = 0;
-  for (let i = 1; i <= 50; i++) {
-    let found = false;
-    for (const ext of imageExtensions) {
-      const imgSrc = `./gallery/photo_gallery/${folder}/${i}.${ext}`;
-      if (await imageExists(imgSrc)) {
-        maxIndex = i;
-        found = true;
-        break;
-      }
-    }
-    if (!found) break;
-  }
-  return maxIndex;
-};
-
-const loadImages = async () => {
-  const fragment = document.createDocumentFragment();
-
-  for (const [key, folder] of Object.entries(imageFolders)) {
-    try {
-      const maxIndex = await findMaxIndex(folder);
-
-      for (let i = maxIndex; i >= 1; i--) {
-        for (const ext of imageExtensions) {
-          const imgSrc = `./gallery/photo_gallery/${folder}/${i}.${ext}`;
-          if (await imageExists(imgSrc)) {
-            const div = document.createElement('div');
-            div.className = `item ${key}`;
-            div.innerHTML = `
-              <a href="${imgSrc}" class="fancylight popup-btn" data-fancybox-group="light">
-                <img class="img-fluid" src="${imgSrc}" alt="${folder} ${i}" title="${folder} ${i}" loading="lazy" />
-              </a>
-            `;
-            fragment.appendChild(div);
-            break;
-          }
+          files.forEach(file => {
+            const imgSrc = `./gallery/photo_gallery/${folder}/${file}`;
+            const imgElement = `
+              <div class="item ${key}">
+                <a href="${imgSrc}" class="fancylight popup-btn" data-fancybox-group="light">
+                  <img class="img-fluid" src="${imgSrc}" title="${folder}" />
+                </a>
+              </div>`;
+            galleryContainer.innerHTML += imgElement;
+          });
         }
-      }
-    } catch (error) {
-      console.error(`Error loading images for ${folder}:`, error);
-    }
-  }
 
-  galleryContainer.appendChild(fragment);
+        // Initialize Magnific Popup after all images are loaded
+        $('.portfolio-item').magnificPopup({
+          delegate: 'a.fancylight',
+          type: 'image',
+          gallery: {
+            enabled: true
+          }
+        });
+      };
 
-  // Initialize Magnific Popup after all images are loaded
-  if (typeof $.fn.magnificPopup === 'function') {
-    $('.portfolio-item').magnificPopup({
-      delegate: 'a.fancylight',
-      type: 'image',
-      gallery: {
-        enabled: true
-      }
+      loadImages();
     });
-  } else {
-    console.warn('Magnific Popup not found. Make sure you have included the library.');
-  }
-};
-
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', loadImages);
   </script>
 
   <!--Footer-->
   <div id="footer"></div>
 
   <!-- JavaScript -->
-  <script src="./javascript/script.js"></script>
-  <script src="./javascript/home.js"></script>
-  <script src="./javascript/gallery.js"></script>
+  <script src="./javascript/script.js" defer></script>
+  <script src="./javascript/home.js" defer></script>
+  <script src="./javascript/gallery.js" defer></script>
 </body>
 
 </html>

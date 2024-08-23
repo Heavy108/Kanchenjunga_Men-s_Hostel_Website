@@ -1,8 +1,8 @@
 
 .header{
   display: flex;
-  /* position: fixed; */
-  /* width: 100%; */
+  position: fixed;
+  width: 100%;
   z-index: 4;
   background-color: var(--base);
   align-items: center;
