@@ -48,77 +48,88 @@
 
   <script>
     const imageFolders = {
-      FD: 'Foundation_Day',
-      AD: 'Annual_Meet',
-      F: 'Farewell',
-      M: 'Miscellaneous'
-    };
+  FD: 'Foundation_Day',
+  AD: 'Annual_Meet',
+  F: 'Farewell',
+  M: 'Miscellaneous'
+};
 
-    const imageExtensions = ['jpg', 'jpeg', 'png'];
-    const galleryContainer = document.getElementById('gallery');
+const imageExtensions = ['jpg', 'jpeg'];
+const galleryContainer = document.getElementById('gallery');
 
-    const imageExists = async (src) => {
-      try {
-        const response = await fetch(src);
-        return response.ok;
-      } catch (error) {
-        return false;
+const imageExists = async (src) => {
+  try {
+    const response = await fetch(src, { method: 'HEAD' });
+    return response.ok;
+  } catch (error) {
+    console.error(`Error checking image existence: ${src}`, error);
+    return false;
+  }
+};
+
+const findMaxIndex = async (folder) => {
+  let maxIndex = 0;
+  for (let i = 1; i <= 50; i++) {
+    let found = false;
+    for (const ext of imageExtensions) {
+      const imgSrc = `./gallery/photo_gallery/${folder}/${i}.${ext}`;
+      if (await imageExists(imgSrc)) {
+        maxIndex = i;
+        found = true;
+        break;
       }
-    };
+    }
+    if (!found) break;
+  }
+  return maxIndex;
+};
 
-    const findMaxIndex = async (folder) => {
-      let maxIndex = 0;
-      for (let i = 1; i <= 1000; i++) { // Arbitrarily high number to find the max index
-        let found = false;
+const loadImages = async () => {
+  const fragment = document.createDocumentFragment();
+
+  for (const [key, folder] of Object.entries(imageFolders)) {
+    try {
+      const maxIndex = await findMaxIndex(folder);
+
+      for (let i = maxIndex; i >= 1; i--) {
         for (const ext of imageExtensions) {
           const imgSrc = `./gallery/photo_gallery/${folder}/${i}.${ext}`;
-          const exists = await imageExists(imgSrc);
-          if (exists) {
-            maxIndex = i;
-            found = true;
+          if (await imageExists(imgSrc)) {
+            const div = document.createElement('div');
+            div.className = `item ${key}`;
+            div.innerHTML = `
+              <a href="${imgSrc}" class="fancylight popup-btn" data-fancybox-group="light">
+                <img class="img-fluid" src="${imgSrc}" alt="${folder} ${i}" title="${folder} ${i}" loading="lazy" />
+              </a>
+            `;
+            fragment.appendChild(div);
             break;
           }
         }
-        if (!found) break;
       }
-      return maxIndex;
-    };
+    } catch (error) {
+      console.error(`Error loading images for ${folder}:`, error);
+    }
+  }
 
-    const loadImages = async () => {
-      for (const key of Object.keys(imageFolders)) {
-        const folder = imageFolders[key];
-        const maxIndex = await findMaxIndex(folder);
+  galleryContainer.appendChild(fragment);
 
-        for (let i = maxIndex; i >= 1; i--) { // Loop from maxIndex to 1
-          for (const ext of imageExtensions) {
-            const imgSrc = `./gallery/photo_gallery/${folder}/${i}.${ext}`;
-            const exists = await imageExists(imgSrc);
-
-            if (exists) {
-              const imgElement = `
-                <div class="item ${key}">
-                  <a href="${imgSrc}" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="${imgSrc}" title="${folder} ${i}" />
-                  </a>
-                </div>`;
-              galleryContainer.innerHTML += imgElement;
-              break; // Move to the next image index
-            }
-          }
-        }
+  // Initialize Magnific Popup after all images are loaded
+  if (typeof $.fn.magnificPopup === 'function') {
+    $('.portfolio-item').magnificPopup({
+      delegate: 'a.fancylight',
+      type: 'image',
+      gallery: {
+        enabled: true
       }
+    });
+  } else {
+    console.warn('Magnific Popup not found. Make sure you have included the library.');
+  }
+};
 
-      // Initialize Magnific Popup after all images are loaded
-      $('.portfolio-item').magnificPopup({
-        delegate: 'a.fancylight',
-        type: 'image',
-        gallery: {
-          enabled: true
-        }
-      });
-    };
-
-    loadImages();
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', loadImages);
   </script>
 
   <!--Footer-->
