@@ -9,9 +9,9 @@
   justify-content: space-between;
   padding: .5rem 1rem;
   box-shadow: rgba(34, 79, 169, 0.16) 0px 1px 4px;
-  border-radius: 2rem;
-  /* margin-top: 1rem; */
-  margin: 1rem;
+  /* border-radius: 2rem; */
+  margin-bottom: 2rem;
+
 }
 
 .navbar{
