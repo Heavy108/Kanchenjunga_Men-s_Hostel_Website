@@ -124,7 +124,7 @@
 .card img{
   position: relative;
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   filter: blur(1.5px);
   object-fit: cover;
 }
@@ -134,14 +134,16 @@
   height: 25rem;
   /* margin: var(--card-margin); */
   width: calc(var(--cardWidth) - var(--card-margin)*6);
-  z-index: 2;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .Introduction h2 ,p {
   color: white;
-  padding: 2rem;
+  padding: 2rem !important;
+  margin: 0rem;
+  /* z-index: 1; */
   /* text-align: center; */
   font-weight: 600;
   
