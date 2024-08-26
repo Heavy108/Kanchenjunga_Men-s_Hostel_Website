@@ -22,26 +22,18 @@
 
   <!--Title-->
   
-    <div class="carouselwrapper module-wrapper">
-      <div class="ui">
-          <button class="prev" onclick="moveClass = 'next'; updateCarousel();">
-              <span class="material-icons">chevron_left</span>
-          </button>
-          <button class="next" onclick="moveClass = 'prev'; updateCarousel();">
-              <span class="material-icons">chevron_right</span>
-          </button>
-      </div>
-      <ul id="carousel" class="carousel">
-          
-      </ul>
-  </div>
-
-  
-
-
-
-
-
+  <div class="carouselwrapper module-wrapper">
+    <div class="ui">
+        <button class="prev" onclick="moveClass = 'next'; handleShift();">
+            <span class="material-icons">chevron_left</span>
+        </button>
+        <button class="next" onclick="moveClass = 'prev'; handleShift();">
+            <span class="material-icons">chevron_right</span>
+        </button>
+    </div>
+    <ul id="carousel" class="carousel">
+    </ul>
+</div>
   <!--About-->
   <section class="about common" id="about">
     <div class="brush-wrap">
