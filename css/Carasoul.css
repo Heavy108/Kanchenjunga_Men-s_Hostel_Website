@@ -62,7 +62,7 @@
     width: calc(100%);
     justify-content: space-between;
     padding: var(--card-margin);
-    z-index: 100;
+    z-index: 3;
   
     button {
       cursor: pointer;

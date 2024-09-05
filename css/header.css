@@ -1,5 +1,4 @@
-
-.header{
+.header {
   display: flex;
   position: fixed;
   width: 100%;
@@ -9,32 +8,30 @@
   justify-content: space-between;
   padding: .5rem 1rem;
   box-shadow: rgba(34, 79, 169, 0.16) 0px 1px 4px;
-  /* border-radius: 2rem; */
   margin-bottom: 2rem;
-
 }
 
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 }
 
-.mobileNav{
+.mobileNav {
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 4;
-  display: none;
+  cursor: pointer;
 }
 
-.mobileNav img{
+.mobileNav img {
   width: 2rem;
   filter: invert();
 }
 
-#closeMenu{
+#closeMenu {
   display: none;
 }
 
@@ -51,10 +48,8 @@
   text-underline-offset: 6px;
 }
 
-
-@media screen and (max-width : 800px) {
-
-  .navbar{
+@media screen and (max-width: 800px) {
+  .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,52 +67,45 @@
     visibility: hidden;
     pointer-events: none;
     transition: all .3s linear;
-
-
   }
-  
-  .mobileNav{
+
+  .mobileNav {
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
-
   }
-  
+
   .header a {
     border: none;
   }
-  
-  .active .navbar{
+
+  .active .navbar {
     transform: translateX(0%);
     opacity: 1;
-    visibility:visible;
+    visibility: visible;
     pointer-events: all;
-
   }
-  
-  .active #closeMenu{
+
+  .active #closeMenu {
     display: block;
-
+    
   }
-  
-  .active #openMenu{
+
+  .active #openMenu {
     display: none;
   }
-  
-  
-  .header a{
+
+  .header a {
     font-size: 1rem;
     text-decoration: none;
     color: #fff;
     position: relative;
-
   }
-
 }
 
-@media screen and (max-width : 1024px) {
-  .header a{
+@media screen and (max-width: 1024px) {
+  .header a {
     font-size: 14px;
   }
 }
