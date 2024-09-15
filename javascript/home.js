@@ -1,5 +1,4 @@
 function toggleMobileMenu() {
-    const header = document.querySelector('.header');
-    header.classList.toggle('active');
-  }
-  
+  const header = document.querySelector('.header');
+  header.classList.toggle('active');
+}
