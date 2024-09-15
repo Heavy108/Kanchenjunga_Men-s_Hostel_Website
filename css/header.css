@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   z-index: 4;
-  background-color: var(--base);
+  background-color: #000235;
   align-items: center;
   justify-content: space-between;
   padding: .5rem 1rem;
