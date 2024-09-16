@@ -128,8 +128,12 @@
   position: relative;
   width: 100%;
   height: 25rem;
-  filter: grayscale();
+  /* filter: grayscale(); */
+  filter: hue-rotate(200deg) saturate(0.) brightness(1.1);
   object-fit: fill;
+}
+.card img:first-child{
+  filter:none;
 }
 .Introduction{
   /* padding: 2rem; */
@@ -179,6 +183,11 @@
   }
   .Introduction h2{
     font-size: 3rem;
+  }
+}
+@media only screen and (min-width:1440px){
+  .card img{
+    height: 32rem;
   }
 }
 @media only screen and (min-width:2560px){

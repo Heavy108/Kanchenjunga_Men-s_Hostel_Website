@@ -1,7 +1,8 @@
 const items = [
-    { image: "./gallery/main.jpeg" },
-    { image: "/gallery/photo_gallery/FD/4.jpeg" },
-    { image: "/gallery/photo_gallery/M/10.jpeg" }
+    { image: "./gallery/photo_gallery/FD/main.jpeg" },
+    { image: "/gallery/photo_gallery/AD/9.jpg" },
+    { image: "/gallery/photo_gallery/AD/3.jpeg" },
+    { image: "/gallery/photo_gallery/AD/5.jpeg" }
 ];
 
 let moveClass = '';
