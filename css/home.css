@@ -192,6 +192,7 @@ img {
 } */
 .video-content video{
   width: 15rem;
+  height: auto;
   border-radius: 1rem;
 }
 
@@ -268,7 +269,7 @@ img {
   }
   .video-content video{
     width: 18rem;
-    height: 20rem;
+    height: auto;
   }
 }
 
@@ -341,7 +342,8 @@ img {
     align-items: center;
   }
   .video-content video{
-    width: 20rem
+    width: 20rem;
+    height: auto;
   };
 
 }
@@ -430,6 +432,7 @@ img {
   }
   .video-content video{
     width: 25rem;
+    height: auto;
   }
 
 }
@@ -499,7 +502,7 @@ img {
    }
    .video-content video{
     width: 40rem;
-    height: 25rem;
+    height: auto;
     border-radius: 1rem;
    }
 
