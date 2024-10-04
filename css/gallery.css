@@ -99,7 +99,12 @@ ol {
 	height:6rem ;
 	border-radius: 8px;
 }
+/* -------------------------------------------------------------------------------
+ */
 
+
+
+ 
 @media screen and (min-width:375px) {
 	.item img {
 		width: 10rem;
