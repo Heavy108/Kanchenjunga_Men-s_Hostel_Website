@@ -21,10 +21,10 @@
   gap: 0.5rem;
 }
 .contactUsbutton{
-  border: 2px solid black;
-  padding: 1rem 1.25rem 1rem 1.25rem;
+  border: 2px solid rgb(57, 48, 177);
+  padding: 0.75rem 1rem 0.75rem 1rem;
   border-radius: 2rem;
-  background:  #2e2d2d;
+  background:  black;
   margin-left: auto;
 }
 

@@ -130,7 +130,7 @@
   height: 25rem;
   /* filter: grayscale(); */
   filter: hue-rotate(200deg) saturate(0.) brightness(1.1);
-  object-fit: fill;
+  object-fit: cover;
 }
 .card img:first-child{
   filter:none;

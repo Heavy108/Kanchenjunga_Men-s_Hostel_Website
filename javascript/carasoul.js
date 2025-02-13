@@ -1,8 +1,8 @@
 const items = [
-    { image: "./gallery/photo_gallery/FD/main.jpeg" },
-    { image: "/gallery/photo_gallery/AD/9.jpg" },
-    { image: "/gallery/photo_gallery/AD/3.jpeg" },
-    { image: "/gallery/photo_gallery/AD/5.jpeg" }
+  { image: "./gallery/photo_gallery/FD/main.jpeg" },
+  { image: "images/car1.jpg" },
+  { image: "/gallery/photo_gallery/AD/3.jpeg" },
+  { image: "/gallery/photo_gallery/AD/5.jpeg" },
 ];
 
 let moveClass = '';
@@ -53,7 +53,7 @@ function handleShift() {
             shiftPrev();
         }
         carousel.className = 'carousel'; // Reset class after the shift
-    }, 500); // Adjust timing if necessary
+    }, 1000); // Adjust timing if necessary
 }
 
 function shiftPrev() {
