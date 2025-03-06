@@ -119,6 +119,33 @@ img {
 .home-content h4{
   font-weight: 500;
 }
+.home-content h3,
+.home-content h1,
+.home-content h4 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.home-content h1 {
+  animation-delay: 0.5s;
+}
+
+.home-content h4 {
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* About */
 

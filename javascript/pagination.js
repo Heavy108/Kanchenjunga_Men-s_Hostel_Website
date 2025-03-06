@@ -3,101 +3,54 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         position: "Prefect",
         name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
+        year: "2023-2024",
+        imageUrl: "./gallery/Admin_photois/prefect.jpeg",
       },
       // Add more staff objects as needed
       {
-        position: "Vice Prefect",
-        name: "John Doe",
-        year: "2021-2022",
-        imageUrl: "./gallery/Admin_photois/viceprefect.jpeg"
+        position: "General Administration",
+        name: "Omkar Pandey",
+        year: "2023-2024",
+        imageUrl: "./gallery/Admin_photois/omkar pandey.jpeg",
       },
       {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
+        position: "Cleanliness & Sanitization",
+        name: "Keshav Kumar",
+        year: "2023-2024",
+        imageUrl: "./gallery/Admin_photois/keshavkumar.jpeg",
       },
       {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
+        position: "Cultural, Literary, Sports, Common Room",
+        name: "Himan Roshan Borah",
+        year: "2023-2024",
+        imageUrl: "./gallery/Admin_photois/himan roshan.jpeg",
       },
       {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
+        position: "Mess Operation",
+        name: "Nilutpal Piku Deka",
+        year: "2023-2024",
+        imageUrl: "./gallery/Admin_photois/nilutpal.jpeg",
       },
       {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
+        position: "Mess Supplies & Food Quality",
+        name: "Aman Kumar Gupta",
+        year: "2023-2024",
+        imageUrl: "./gallery/Admin_photois/aman (2).jpg",
       },
 
       {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
+        position: "Auditor, Finance",
+        name: "Ashankur Borgohain",
+        year: "2023-2024",
+        imageUrl: "./gallery/Admin_photois/ashankur.jpeg",
       },
       {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
+        position: "Web Master",
+        name: "Deepak Kumar Prajapati",
+        year: "2023-2024",
+        imageUrl: "./gallery/Admin_photois/dkp-image.webp",
       },
-      {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
-      },
-      {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
-      },
-      {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
-      },
-      {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
-      },
-      {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
-      },
-      {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
-      },
-      {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
-      },
-      {
-        position: "Prefect",
-        name: "Pallab Kumar Borah",
-        year: "2022-2023",
-        imageUrl: "./gallery/Admin_photois/prefect.jpeg"
-      },
+
       // Add more staff members here...
     ];
   

@@ -36,7 +36,9 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
 }
-
+#aprefect{
+  overflow: scroll;
+}
 .nav {
   display: flex;
   gap: 0.5rem;
@@ -80,6 +82,17 @@ h3 {
     text-decoration: none;
     color: black;
 }
+.printroduction h4 {
+  word-wrap: break-word; /* Ensures words break if necessary */
+  overflow-wrap: break-word;
+  white-space: normal; /* Allows text to wrap to the next line */
+  max-width: 10rem; 
+  /* Prevents overflow */
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
 
 .introduction {
     margin-bottom: 2rem;
